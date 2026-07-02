@@ -1,0 +1,18 @@
+.card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.card_title {
+  margin: 0 0 16px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.card_body {
+  display: flex;
+  flex-direction: column;
+}

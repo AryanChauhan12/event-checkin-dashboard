@@ -1,0 +1,33 @@
+.main-layout {
+  min-height: 100vh;
+}
+
+.main-layout__content-wrapper {
+  margin-left: var(--sidebar-width, 240px);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-layout__content {
+  flex: 1;
+  padding: 24px;
+}
+
+.main-layout__overlay {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .main-layout__content-wrapper {
+    margin-left: 0;
+  }
+
+  .main-layout__overlay {
+    display: block;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 25;
+  }
+}

@@ -1,0 +1,45 @@
+.summary-card {
+  padding: 18px 20px;
+}
+
+.summary-card .card_body {
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+}
+
+.summary-card__icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  background: color-mix(in srgb, var(--summary-accent, var(--accent)) 15%, transparent);
+  color: var(--summary-accent, var(--accent));
+}
+
+.summary-card__text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  min-width: 0;
+}
+
+.summary-card__value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text-h);
+  line-height: 1.2;
+}
+
+.summary-card__label {
+  font-size: 12.5px;
+  color: var(--text);
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

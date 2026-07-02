@@ -1,0 +1,66 @@
+.manual-qr {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.manual-qr label {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-h);
+}
+
+.manual-qr_row {
+  display: flex;
+  gap: 8px;
+}
+
+.manual-qr_row input {
+  flex: 1;
+  min-width: 0;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+  color: var(--text-h);
+  background: var(--bg);
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.manual-qr_row input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 20%, transparent);
+}
+
+.manual-qr_row button {
+  flex-shrink: 0;
+  padding: 10px 18px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.manual-qr_row button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.manual-qr_row button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 420px) {
+  .manual-qr_row {
+    flex-direction: column;
+  }
+
+  .manual-qr_row button {
+    width: 100%;
+  }
+}

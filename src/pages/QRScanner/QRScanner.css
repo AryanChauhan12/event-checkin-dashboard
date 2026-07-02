@@ -1,0 +1,18 @@
+.qr-scanner-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.qr-scanner-page_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .qr-scanner-page_grid {
+    grid-template-columns: 1fr;
+  }
+}

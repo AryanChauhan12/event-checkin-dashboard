@@ -1,0 +1,138 @@
+.verification-card_placeholder {
+  margin: 0;
+  padding: 24px 0;
+  text-align: center;
+  font-size: 13.5px;
+  color: var(--text);
+}
+
+.verification-card_loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 24px 0;
+}
+
+.verification-card_spinner {
+  width: 28px;
+  height: 28px;
+  border: 3px solid var(--border);
+  border-top-color: var(--accent);
+  border-radius: 50%;
+  animation: verification-card-spin 0.7s linear infinite;
+}
+
+.verification-card_loading p {
+  margin: 0;
+  font-size: 13px;
+  color: var(--text);
+}
+
+@keyframes verification-card-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.verification-card_not-found {
+  padding: 16px 0;
+  text-align: center;
+}
+
+.verification-card_not-found h3 {
+  margin: 0 0 6px;
+  font-size: 15px;
+  color: #d63939;
+}
+
+.verification-card_not-found p {
+  margin: 0;
+  font-size: 13.5px;
+  color: var(--text);
+}
+
+.verification-card_found {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.verification-card_badge {
+  align-self: flex-start;
+  padding: 3px 12px;
+  border-radius: 999px;
+  font-size: 11.5px;
+  font-weight: 700;
+  background: color-mix(in srgb, #22c55e 20%, transparent);
+  color: #22c55e;
+}
+
+.verification-card_list {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0 24px;
+}
+
+.verification-card_row {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.verification-card_row dt {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.verification-card_row dd {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-h);
+  word-break: break-word;
+}
+
+@media (max-width: 640px) {
+  .verification-card_list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.verification-card_actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 4px;
+}
+
+.verification-card_check-in-btn {
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  background: #22c55e;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.verification-card_check-in-btn:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.verification-card_check-in-btn:disabled {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+.verification-card_checked-in-msg {
+  margin: 0;
+  font-size: 13px;
+  font-weight: 600;
+  color: #22c55e;
+}

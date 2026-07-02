@@ -1,0 +1,44 @@
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 56px 20px;
+  border: 1px dashed var(--border);
+  border-radius: 10px;
+  color: var(--text);
+}
+
+.empty-state_icon {
+  opacity: 0.5;
+}
+
+.empty-state_title {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--text-h);
+}
+
+.empty-state_text {
+  margin: 0;
+  font-size: 14px;
+  text-align: center;
+}
+
+.empty-state_add-btn {
+  margin-top: 4px;
+  padding: 9px 18px;
+  border: none;
+  border-radius: 6px;
+  background: var(--accent);
+  color: #fff;
+  font-size: 13.5px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.empty-state_add-btn:hover {
+  opacity: 0.9;
+}

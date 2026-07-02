@@ -1,0 +1,691 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Admin User",
+      "email": "admin@example.com",
+      "password": "Admin@123",
+      "role": "admin",
+      "token": "mock-jwt-token-admin-8f3e2b1c9d4a7f61"
+    }
+  ],
+  "customers": [
+    {
+      "id": 1,
+      "customerName": "Rohan Mehta",
+      "mobile": "9821345670",
+      "email": "rohan.mehta@gmail.com",
+      "projectName": "Skyline Heights",
+      "qrCode": "QR001",
+      "eventStatus": "Assigned",
+      "assignedBooth": "A4",
+      "checkedIn": true,
+      "remarks": "Checked in, waiting for booth allocation",
+      "createdAt": "2026-07-02T09:05:00Z"
+    },
+    {
+      "id": 2,
+      "customerName": "Ananya Sharma",
+      "mobile": "9876543210",
+      "email": "ananya.sharma@yahoo.com",
+      "projectName": "Green Meadows Residency",
+      "qrCode": "QR002",
+      "eventStatus": "Assigned",
+      "assignedBooth": "A1",
+      "checkedIn": true,
+      "remarks": "Interested in a corner unit facing the park",
+      "createdAt": "2026-07-02T09:08:00Z"
+    },
+    {
+      "id": 3,
+      "customerName": "Vikram Singh",
+      "mobile": "9911223344",
+      "email": "vikram.singh@outlook.com",
+      "projectName": "Palm Grove Villas",
+      "qrCode": "QR003",
+      "eventStatus": "Checked-In",
+      "assignedBooth": null,
+      "checkedIn": true,
+      "remarks": "Registered online, yet to arrive",
+      "createdAt": "2026-07-02T09:10:00Z"
+    },
+    {
+      "id": 4,
+      "customerName": "Priya Nair",
+      "mobile": "9845098450",
+      "email": "priya.nair@gmail.com",
+      "projectName": "Sunrise Enclave",
+      "qrCode": "QR004",
+      "eventStatus": "Checked-In",
+      "assignedBooth": null,
+      "checkedIn": true,
+      "remarks": "Discussing payment plan with sales manager",
+      "createdAt": "2026-07-02T09:12:00Z"
+    },
+    {
+      "id": 5,
+      "customerName": "Arjun Reddy",
+      "mobile": "9900112233",
+      "email": "arjun.reddy@gmail.com",
+      "projectName": "Emerald Bay Towers",
+      "qrCode": "QR005",
+      "eventStatus": "Completed",
+      "assignedBooth": "A2",
+      "checkedIn": true,
+      "remarks": "Booking amount paid, deal closed",
+      "createdAt": "2026-07-02T09:15:00Z"
+    },
+    {
+      "id": 6,
+      "customerName": "Sneha Kulkarni",
+      "mobile": "9765432109",
+      "email": "sneha.kulkarni@gmail.com",
+      "projectName": "The Address Downtown",
+      "qrCode": "QR006",
+      "eventStatus": "Follow-Up Required",
+      "assignedBooth": "B3",
+      "checkedIn": true,
+      "remarks": "Needs home loan approval before confirming",
+      "createdAt": "2026-07-02T09:18:00Z"
+    },
+    {
+      "id": 7,
+      "customerName": "Karan Malhotra",
+      "mobile": "9988776655",
+      "email": "karan.malhotra@yahoo.com",
+      "projectName": "Royal Orchid County",
+      "qrCode": "QR007",
+      "eventStatus": "Waiting",
+      "assignedBooth": null,
+      "checkedIn": false,
+      "remarks": "Yet to check in at the gate",
+      "createdAt": "2026-07-02T09:20:00Z"
+    },
+    {
+      "id": 8,
+      "customerName": "Divya Iyer",
+      "mobile": "9812345098",
+      "email": "divya.iyer@gmail.com",
+      "projectName": "Silver Oak Residency",
+      "qrCode": "QR008",
+      "eventStatus": "Checked-In",
+      "assignedBooth": null,
+      "checkedIn": true,
+      "remarks": "Checked in, exploring project brochures",
+      "createdAt": "2026-07-02T09:22:00Z"
+    },
+    {
+      "id": 9,
+      "customerName": "Aditya Verma",
+      "mobile": "9871234560",
+      "email": "aditya.verma@outlook.com",
+      "projectName": "Lakeview Paradise",
+      "qrCode": "QR009",
+      "eventStatus": "Assigned",
+      "assignedBooth": "B1",
+      "checkedIn": true,
+      "remarks": "Prefers a higher floor unit",
+      "createdAt": "2026-07-02T09:25:00Z"
+    },
+    {
+      "id": 10,
+      "customerName": "Neha Kapoor",
+      "mobile": "9898989898",
+      "email": "neha.kapoor@gmail.com",
+      "projectName": "Crystal Court",
+      "qrCode": "QR010",
+      "eventStatus": "In Discussion",
+      "assignedBooth": "B4",
+      "checkedIn": true,
+      "remarks": "Comparing pricing with a nearby project",
+      "createdAt": "2026-07-02T09:28:00Z"
+    },
+    {
+      "id": 11,
+      "customerName": "Rajesh Gupta",
+      "mobile": "9765123409",
+      "email": "rajesh.gupta@gmail.com",
+      "projectName": "Golden Gate Homes",
+      "qrCode": "QR011",
+      "eventStatus": "Waiting",
+      "assignedBooth": null,
+      "checkedIn": false,
+      "remarks": "Registered online, yet to arrive",
+      "createdAt": "2026-07-02T09:30:00Z"
+    },
+    {
+      "id": 12,
+      "customerName": "Pooja Desai",
+      "mobile": "9823456701",
+      "email": "pooja.desai@yahoo.com",
+      "projectName": "Metro Square",
+      "qrCode": "QR012",
+      "eventStatus": "Completed",
+      "assignedBooth": "A4",
+      "checkedIn": true,
+      "remarks": "Token amount paid for 3BHK unit",
+      "createdAt": "2026-07-02T09:32:00Z"
+    },
+    {
+      "id": 13,
+      "customerName": "Siddharth Rao",
+      "mobile": "9900998877",
+      "email": "siddharth.rao@gmail.com",
+      "projectName": "Harmony Greens",
+      "qrCode": "QR013",
+      "eventStatus": "Follow-Up Required",
+      "assignedBooth": "A5",
+      "checkedIn": true,
+      "remarks": "Will confirm after discussing with family",
+      "createdAt": "2026-07-02T09:35:00Z"
+    },
+    {
+      "id": 14,
+      "customerName": "Kavya Menon",
+      "mobile": "9845123670",
+      "email": "kavya.menon@gmail.com",
+      "projectName": "Blue Ridge Estates",
+      "qrCode": "QR014",
+      "eventStatus": "Waiting",
+      "assignedBooth": null,
+      "checkedIn": false,
+      "remarks": "Yet to check in at the gate",
+      "createdAt": "2026-07-02T09:38:00Z"
+    },
+    {
+      "id": 15,
+      "customerName": "Manish Chopra",
+      "mobile": "9911667788",
+      "email": "manish.chopra@outlook.com",
+      "projectName": "Pinnacle Towers",
+      "qrCode": "QR015",
+      "eventStatus": "Checked-In",
+      "assignedBooth": null,
+      "checkedIn": true,
+      "remarks": "Checked in, waiting for booth allocation",
+      "createdAt": "2026-07-02T09:40:00Z"
+    },
+    {
+      "id": 16,
+      "customerName": "Riya Bansal",
+      "mobile": "9876123450",
+      "email": "riya.bansal@gmail.com",
+      "projectName": "Maple Wood Residency",
+      "qrCode": "QR016",
+      "eventStatus": "Waiting",
+      "assignedBooth": null,
+      "checkedIn": false,
+      "remarks": "Registered online, yet to arrive",
+      "createdAt": "2026-07-02T09:42:00Z"
+    },
+    {
+      "id": 17,
+      "customerName": "Amit Joshi",
+      "mobile": "9822334455",
+      "email": "amit.joshi@gmail.com",
+      "projectName": "Sapphire Heights",
+      "qrCode": "QR017",
+      "eventStatus": "In Discussion",
+      "assignedBooth": "A5",
+      "checkedIn": true,
+      "remarks": "Requested a site visit next week",
+      "createdAt": "2026-07-02T09:45:00Z"
+    },
+    {
+      "id": 18,
+      "customerName": "Sanya Kaur",
+      "mobile": "9812098765",
+      "email": "sanya.kaur@gmail.com",
+      "projectName": "Regal Gardens",
+      "qrCode": "QR018",
+      "eventStatus": "Checked-In",
+      "assignedBooth": null,
+      "checkedIn": true,
+      "remarks": "Checked in, waiting for booth allocation",
+      "createdAt": "2026-07-02T09:48:00Z"
+    },
+    {
+      "id": 19,
+      "customerName": "Nikhil Agarwal",
+      "mobile": "9900776655",
+      "email": "nikhil.agarwal@yahoo.com",
+      "projectName": "Urban Nest",
+      "qrCode": "QR019",
+      "eventStatus": "Assigned",
+      "assignedBooth": "A2",
+      "checkedIn": true,
+      "remarks": "Shortlisted two unit options",
+      "createdAt": "2026-07-02T09:50:00Z"
+    },
+    {
+      "id": 20,
+      "customerName": "Ishita Pillai",
+      "mobile": "9845098123",
+      "email": "ishita.pillai@gmail.com",
+      "projectName": "Horizon Homes",
+      "qrCode": "QR020",
+      "eventStatus": "Waiting",
+      "assignedBooth": null,
+      "checkedIn": false,
+      "remarks": "Registered online, yet to arrive",
+      "createdAt": "2026-07-02T09:52:00Z"
+    },
+    {
+      "id": 21,
+      "customerName": "Varun Chandra",
+      "mobile": "9876001122",
+      "email": "varun.chandra@outlook.com",
+      "projectName": "Serene County",
+      "qrCode": "QR021",
+      "eventStatus": "Assigned",
+      "assignedBooth": "B5",
+      "checkedIn": true,
+      "remarks": "Interested in a villa with private garden",
+      "createdAt": "2026-07-02T09:55:00Z"
+    },
+    {
+      "id": 22,
+      "customerName": "Meera Krishnan",
+      "mobile": "9900334455",
+      "email": "meera.krishnan@gmail.com",
+      "projectName": "Nova City Center",
+      "qrCode": "QR022",
+      "eventStatus": "In Discussion",
+      "assignedBooth": "B3",
+      "checkedIn": true,
+      "remarks": "Wants to know about clubhouse amenities",
+      "createdAt": "2026-07-02T09:58:00Z"
+    },
+    {
+      "id": 23,
+      "customerName": "Suresh Bhatt",
+      "mobile": "9823001199",
+      "email": "suresh.bhatt@yahoo.com",
+      "projectName": "Elite Business Park",
+      "qrCode": "QR023",
+      "eventStatus": "Assigned",
+      "assignedBooth": "B2",
+      "checkedIn": true,
+      "remarks": "Evaluating commercial shop options",
+      "createdAt": "2026-07-02T10:00:00Z"
+    },
+    {
+      "id": 24,
+      "customerName": "Anjali Trivedi",
+      "mobile": "9845112233",
+      "email": "anjali.trivedi@gmail.com",
+      "projectName": "Sunshine Vista",
+      "qrCode": "QR024",
+      "eventStatus": "Checked-In",
+      "assignedBooth": null,
+      "checkedIn": true,
+      "remarks": "Full payment completed for 2BHK",
+      "createdAt": "2026-07-02T10:05:00Z"
+    },
+    {
+      "id": 25,
+      "customerName": "Rahul Saxena",
+      "mobile": "9900556677",
+      "email": "rahul.saxena@gmail.com",
+      "projectName": "Whitefield Greens",
+      "qrCode": "QR025",
+      "eventStatus": "Waiting",
+      "assignedBooth": null,
+      "checkedIn": false,
+      "remarks": "Registered online, yet to arrive",
+      "createdAt": "2026-07-02T10:08:00Z"
+    }
+  ],
+  "boothAssignments": [
+    {
+      "id": 1,
+      "boothNumber": "A1",
+      "salesManager": "Rakesh Sharma",
+      "status": "Occupied",
+      "customerId": 2
+    },
+    {
+      "id": 2,
+      "boothNumber": "A2",
+      "salesManager": "Sunita Verma",
+      "status": "Occupied",
+      "customerId": 19
+    },
+    {
+      "id": 3,
+      "boothNumber": "A3",
+      "salesManager": "Ajay Kumar",
+      "status": "Available"
+    },
+    {
+      "id": 4,
+      "boothNumber": "A4",
+      "salesManager": "Deepa Nair",
+      "status": "Occupied",
+      "customerId": 1
+    },
+    {
+      "id": 5,
+      "boothNumber": "A5",
+      "salesManager": "Vikas Malhotra",
+      "status": "Occupied",
+      "customerId": 17
+    },
+    {
+      "id": 6,
+      "boothNumber": "B1",
+      "salesManager": "Sonal Gupta",
+      "status": "Available"
+    },
+    {
+      "id": 7,
+      "boothNumber": "B2",
+      "salesManager": "Manoj Tiwari",
+      "status": "Occupied",
+      "customerId": 23
+    },
+    {
+      "id": 8,
+      "boothNumber": "B3",
+      "salesManager": "Ritu Chawla",
+      "status": "Occupied",
+      "customerId": 22
+    },
+    {
+      "id": 9,
+      "boothNumber": "B4",
+      "salesManager": "Ashok Pandey",
+      "status": "Occupied",
+      "customerId": 10
+    },
+    {
+      "id": 10,
+      "boothNumber": "B5",
+      "salesManager": "Nidhi Rastogi",
+      "status": "Occupied",
+      "customerId": 21
+    }
+  ],
+  "customerStatusHistory": [
+    {
+      "id": 1,
+      "customerId": 2,
+      "status": "Waiting",
+      "remarks": "Registered at entry gate",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:00:00Z"
+    },
+    {
+      "id": 2,
+      "customerId": 2,
+      "status": "Checked-In",
+      "remarks": "Verified ticket and checked in",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:06:00Z"
+    },
+    {
+      "id": 3,
+      "customerId": 2,
+      "status": "Assigned",
+      "remarks": "Assigned to booth A1 with sales manager Rakesh Sharma",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:08:00Z"
+    },
+    {
+      "id": 4,
+      "customerId": 4,
+      "status": "Waiting",
+      "remarks": "Registered at entry gate",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:02:00Z"
+    },
+    {
+      "id": 5,
+      "customerId": 4,
+      "status": "Checked-In",
+      "remarks": "Verified ticket and checked in",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:07:00Z"
+    },
+    {
+      "id": 6,
+      "customerId": 4,
+      "status": "Assigned",
+      "remarks": "Assigned to booth A3",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:09:00Z"
+    },
+    {
+      "id": 7,
+      "customerId": 4,
+      "status": "In Discussion",
+      "remarks": "Discussing 3BHK payment plan",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:12:00Z"
+    },
+    {
+      "id": 8,
+      "customerId": 5,
+      "status": "Checked-In",
+      "remarks": "Checked in at gate",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T08:50:00Z"
+    },
+    {
+      "id": 9,
+      "customerId": 5,
+      "status": "Assigned",
+      "remarks": "Assigned to booth A2",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T08:55:00Z"
+    },
+    {
+      "id": 10,
+      "customerId": 5,
+      "status": "In Discussion",
+      "remarks": "Reviewing floor plans",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:05:00Z"
+    },
+    {
+      "id": 11,
+      "customerId": 5,
+      "status": "Completed",
+      "remarks": "Booking amount paid, deal closed",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:15:00Z"
+    },
+    {
+      "id": 12,
+      "customerId": 6,
+      "status": "Checked-In",
+      "remarks": "Checked in at gate",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T08:55:00Z"
+    },
+    {
+      "id": 13,
+      "customerId": 6,
+      "status": "Assigned",
+      "remarks": "Assigned to booth B3",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:00:00Z"
+    },
+    {
+      "id": 14,
+      "customerId": 6,
+      "status": "In Discussion",
+      "remarks": "Discussing loan eligibility",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:10:00Z"
+    },
+    {
+      "id": 15,
+      "customerId": 6,
+      "status": "Follow-Up Required",
+      "remarks": "Needs home loan approval before confirming booking",
+      "followUpDate": "2026-07-09",
+      "updatedAt": "2026-07-02T09:18:00Z"
+    },
+    {
+      "id": 16,
+      "customerId": 9,
+      "status": "Waiting",
+      "remarks": "Registered at entry gate",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:15:00Z"
+    },
+    {
+      "id": 17,
+      "customerId": 9,
+      "status": "Checked-In",
+      "remarks": "Verified ticket and checked in",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:20:00Z"
+    },
+    {
+      "id": 18,
+      "customerId": 9,
+      "status": "Assigned",
+      "remarks": "Assigned to booth B1 with sales manager Sonal Gupta",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:25:00Z"
+    },
+    {
+      "id": 19,
+      "customerId": 12,
+      "status": "Checked-In",
+      "remarks": "Checked in at gate",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:00:00Z"
+    },
+    {
+      "id": 20,
+      "customerId": 12,
+      "status": "Assigned",
+      "remarks": "Assigned to booth A4",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:05:00Z"
+    },
+    {
+      "id": 21,
+      "customerId": 12,
+      "status": "In Discussion",
+      "remarks": "Discussing 3BHK unit pricing",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:20:00Z"
+    },
+    {
+      "id": 22,
+      "customerId": 12,
+      "status": "Completed",
+      "remarks": "Token amount paid for 3BHK unit",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:32:00Z"
+    },
+    {
+      "id": 23,
+      "customerId": 13,
+      "status": "Checked-In",
+      "remarks": "Checked in at gate",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:05:00Z"
+    },
+    {
+      "id": 24,
+      "customerId": 13,
+      "status": "Assigned",
+      "remarks": "Assigned to booth A5",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:10:00Z"
+    },
+    {
+      "id": 25,
+      "customerId": 13,
+      "status": "In Discussion",
+      "remarks": "Discussing villa options with family on call",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:25:00Z"
+    },
+    {
+      "id": 26,
+      "customerId": 13,
+      "status": "Follow-Up Required",
+      "remarks": "Will confirm after discussing with family",
+      "followUpDate": "2026-07-06",
+      "updatedAt": "2026-07-02T09:35:00Z"
+    },
+    {
+      "id": 27,
+      "customerId": 24,
+      "status": "Checked-In",
+      "remarks": "Checked in at gate",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:30:00Z"
+    },
+    {
+      "id": 28,
+      "customerId": 24,
+      "status": "Assigned",
+      "remarks": "Assigned to booth B1",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T09:45:00Z"
+    },
+    {
+      "id": 29,
+      "customerId": 24,
+      "status": "Completed",
+      "remarks": "Full payment completed for 2BHK",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T10:05:00Z"
+    },
+    {
+      "customerId": 2,
+      "status": "Checked-In",
+      "remarks": "Booth A1 assignment removed",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T08:14:12.722Z",
+      "id": 30
+    },
+    {
+      "customerId": 1,
+      "status": "Waiting",
+      "remarks": "Checked in, waiting for booth allocation",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T08:14:30.536Z",
+      "id": 31
+    },
+    {
+      "customerId": 1,
+      "status": "Assigned",
+      "remarks": "Checked in, waiting for booth allocation",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T08:14:38.390Z",
+      "id": 32
+    },
+    {
+      "customerId": 1,
+      "status": "Assigned",
+      "remarks": "Assigned to booth A4 with sales manager Deepa Nair",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T11:51:47.581Z",
+      "id": 33
+    },
+    {
+      "customerId": 24,
+      "status": "Checked-In",
+      "remarks": "Booth B1 assignment removed",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T12:48:26.705Z",
+      "id": 34
+    },
+    {
+      "customerId": 2,
+      "status": "Assigned",
+      "remarks": "Assigned to booth A1 with sales manager Rakesh Sharma",
+      "followUpDate": null,
+      "updatedAt": "2026-07-02T12:48:47.802Z",
+      "id": 35
+    }
+  ]
+}
