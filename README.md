@@ -1,18 +1,33 @@
 # Event Customer Check-In Dashboard
 
-A modern React-based Event Customer Check-In Dashboard for managing customer registrations, QR-based check-ins, booth assignments, and event status tracking through an intuitive admin interface.
+A production-ready React + Vite application built as a technical assessment to manage customer registrations, QR-based check-ins, booth assignments, and event status tracking using a mock REST API powered by json-server.
+
+## Live Demo
+
+### Frontend (Vercel)
+
+https://event-checkin-dashboard-sooty.vercel.app
+
+### Backend API (Render)
+
+https://event-checkin-dashboard-api-ip5d.onrender.com
+
+---
 
 ## Overview
 
-The app lets an event admin log in and:
+The application allows an event administrator to:
 
-- Track every registered customer and their current event status.
-- Scan (camera) or manually enter a customer's QR code to verify identity and check them in.
-- Assign, change, or remove a booth for checked-in customers.
-- Update a customer's status through the event lifecycle, with a full audit history.
-- View live dashboard statistics (totals, check-ins, status breakdown) driven entirely by the mock API — no hardcoded numbers.
+- Track registered customers and their current event status.
+- Verify customers using QR code scanning or manual QR entry.
+- Check in customers with duplicate check-in protection.
+- Assign, change, and remove booth assignments.
+- Track customer status changes with complete history.
+- View live dashboard analytics generated from API data.
 
-A [json-server](https://github.com/typicode/json-server) instance backed by `db.json` stands in for a real backend.
+The backend is powered by **json-server** using **db.json** as a mock REST API.
+
+---
 
 ## Features
 
@@ -68,31 +83,73 @@ Path aliases (`@`, `@api`, `@components`, `@constants`, `@context`, `@hooks`, `@
 npm install
 ```
 
-A `.env` file already exists at the project root pointing at the mock API:
+---
 
-```
+## Environment Variables
+
+Create a `.env` file in the project root.
+
+### Local Development
+
+```env
 VITE_API_BASE_URL=http://localhost:5000
 ```
 
-## Running the React Application
+### Production
+
+```env
+VITE_API_BASE_URL=https://YOUR-RENDER-URL.onrender.com
+```
+
+---
+
+## Running the Application
+
+Start React:
 
 ```bash
 npm run dev
 ```
 
-The app runs at `http://localhost:5173` by default.
-
-## Running the JSON Server (mock backend)
-
-In a separate terminal:
+Start Mock API:
 
 ```bash
 npm run mock-server
 ```
 
-This serves `db.json` at `http://localhost:5000` (`--watch` reloads on file changes). **Both the React app and the mock server need to be running** for the app to work.
+React runs on:
 
-## Demo Login Credentials
+```
+http://localhost:5173
+```
+
+Mock API runs on:
+
+```
+http://localhost:5000
+```
+
+---
+
+## Deployment
+
+### Frontend
+
+- Vercel
+
+### Backend
+
+- Render
+
+The frontend communicates with the deployed backend using:
+
+```env
+VITE_API_BASE_URL=https://YOUR-RENDER-URL.onrender.com
+```
+
+---
+
+## Demo Credentials
 
 | Field    | Value               |
 | -------- | ------------------- |
@@ -103,21 +160,21 @@ The Login page also has a **"Use Demo Account"** button that fills these in for 
 
 ## API Endpoints
 
-All requests go to `VITE_API_BASE_URL` (json-server), routed through `src/api/axiosClient.js`.
+| Method | Endpoint                 | Purpose               |
+| ------ | ------------------------ | --------------------- |
+| GET    | `/users?email=`          | Login                 |
+| GET    | `/customers`             | Get Customers         |
+| POST   | `/customers`             | Create Customer       |
+| PUT    | `/customers/:id`         | Update Customer       |
+| DELETE | `/customers/:id`         | Delete Customer       |
+| GET    | `/boothAssignments`      | Get Booths            |
+| PUT    | `/boothAssignments/:id`  | Assign/Remove Booth   |
+| GET    | `/customerStatusHistory` | Customer History      |
+| POST   | `/customerStatusHistory` | Create Status History |
 
-| Method | Endpoint                 | Used for                                                |
-| ------ | ------------------------ | ------------------------------------------------------- |
-| GET    | `/users?email=`          | Login lookup                                            |
-| GET    | `/customers`             | List customers                                          |
-| POST   | `/customers`             | Add customer                                            |
-| PUT    | `/customers/:id`         | Edit customer / check-in / status / booth updates       |
-| DELETE | `/customers/:id`         | Delete customer                                         |
-| GET    | `/boothAssignments`      | List booths                                             |
-| PUT    | `/boothAssignments/:id`  | Occupy / free a booth                                   |
-| GET    | `/customerStatusHistory` | Full status history (filtered client-side per customer) |
-| POST   | `/customerStatusHistory` | Append a new status/check-in/booth event                |
+---
 
-## Third-Party Libraries Used
+## Third-Party Libraries
 
 - `react-router-dom` — client-side routing
 - `react-hook-form` — form state and validation
@@ -143,27 +200,39 @@ All requests go to `VITE_API_BASE_URL` (json-server), routed through `src/api/ax
 
 ![Login](./screenshots/login.png)
 
+---
+
 ### Dashboard
 
 ![Dashboard](./screenshots/dashboard.png)
+
+---
 
 ### Customers
 
 ![Customers](./screenshots/customers.png)
 
+---
+
 ### QR Scanner
 
 ![QR Scanner](./screenshots/qr-scanner.png)
+
+---
 
 ### Booth Assignment
 
 ![Booth Assignment](./screenshots/booth-assignment.png)
 
+---
+
 ### Customer Status
 
 ![Customer Status](./screenshots/customer-status.png)
 
-## Assumptions Made
+---
+
+## Assumptions
 
 - Authentication is a mock flow against json-server (plaintext password match, fake JWT string) — acceptable for a front-end assignment, not production-grade auth.
 - A customer's `checkedIn` flag is treated as a one-way flag: once true it stays true, even if their status is later changed away from `Checked-In` (e.g. to `Assigned` or `Completed`).
@@ -172,11 +241,13 @@ All requests go to `VITE_API_BASE_URL` (json-server), routed through `src/api/ax
 
 ## Known Limitations
 
-- No automated tests (unit/integration/e2e) are included.
-- No pagination/virtualization on the Booth Assignment or Customer Status customer lists — they rely on a capped-height scroll container, fine for the seeded dataset size but not built for thousands of records.
-- Dashboard "Check-In Analytics" only charts the six event-status buckets; it doesn't offer date-range filtering.
-- No dark/light mode toggle — the UI follows the OS `prefers-color-scheme` only.
-- The mock backend has no real persistence beyond the local `db.json` file and no concurrent-write protection.
+- No automated tests.
+- json-server is used instead of a production backend.
+- No real authentication or JWT.
+- No server-side pagination.
+- No role-based authorization.
+
+---
 
 ## Future Improvements
 
